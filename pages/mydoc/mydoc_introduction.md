@@ -1,8 +1,8 @@
 
 # UD 01: Introducción a los contenedores y a Docker
 
-**Licencia:**  
-Reconocimiento – NoComercial - CompartirIgual (BY-NC-SA). No se permite un uso comercial de la obra original ni de sus posibles derivadas. La distribución debe hacerse bajo la misma licencia.
+### **Licencia:**  
+### Reconocimiento – NoComercial - CompartirIgual (BY-NC-SA). No se permite un uso comercial de la obra original ni de sus posibles derivadas. La distribución debe hacerse bajo la misma licencia.
 **Autor:** Sergi García Barea  
 ---
 
