@@ -1,12 +1,5 @@
----
-title: Introduction
-sidebar: mydoc_sidebar
-permalink: mydoc_introduction.html
-folder: mydoc
----
 
-# Introducción a Docker  
-**UD 01: Introducción a los contenedores y a Docker**
+# UD 01: Introducción a los contenedores y a Docker
 
 **Licencia:**  
 Reconocimiento – NoComercial - CompartirIgual (BY-NC-SA). No se permite un uso comercial de la obra original ni de sus posibles derivadas. La distribución debe hacerse bajo la misma licencia.
@@ -52,26 +45,43 @@ En esta unidad exploraremos el concepto de contenedores, enfocándonos en conten
 ## 2. Conceptos previos  
 
 ### 2.1 Virtualización  
-La virtualización abstrae hardware para crear recursos virtuales. Es usada en sistemas, desarrollo, análisis de malware, y más.  
+La virtualización es un conjunto de tecnologías de hardware y software que permiten la
+abstracción de hardware, creando así la “ilusión” de administrar recursos virtuales como si fueran
+recursos reales, de forma transparente para los usuarios.
+La virtualización es muy utilizada para el despliegue de sistemas, desarrollo de software, análisis
+de malware, escalado horizontal, etc. Ya que es relativamente sencilla de implementar y puede
+ahorrar significativamente costes (consumo de energía, mantenimiento, etc.)  
 
 ### 2.2 ¿Qué es una máquina virtual?  
-Permite simular una máquina física para probar software y configuraciones.  
-Tipos principales:  
-- Máquinas virtuales de proceso  
-- Hipervisores  
-- Contenedores (Docker pertenece a esta categoría)  
+A veces, necesitamos probar un nuevo sistema operativo, una determinada configuración, probar
+a desplegar un software, etc. pero no está disponible para ello una máquina real. La creación de
+una máquina virtual utilizando técnicas de virtualización es la solución a este problema.
+De este modo, una máquina virtual permite simular una máquina (con su sistema operativo) y
+ejecutar programas como si estuvieran utilizando una máquina real e independiente.
+Para la creación de máquinas virtuales generalmente existen varios tipos de tecnologías:
+● Máquina virtuales de proceso.
+● Hipervisores.
+● Contenedores. Docker se engloba en esta categoría.  
 
 ### 2.3 ¿Qué es una máquina virtual de proceso?  
-Ejecuta programas diseñados para arquitecturas diferentes como procesos locales. Ejemplos:  
-- **JVM:** Máquina virtual de Java  
-- **Wine:** Ejecuta apps de Windows en otros sistemas  
+Las máquinas virtuales de proceso, son un tipo de máquinas virtuales que permiten ejecutar un
+programa diseñado para un sistema operativo/arquitectura concreta (distinta de la máquina
+actual), como un proceso más de nuestra máquina actual.
+Esto se consigue implementando una máquina virtual de proceso que emula la arquitectura
+necesaria. Teóricamente, podremos lanzar nuestro programa en cualquier sistema que tenga la
+máquina virtual de proceso implementada.
+Algunos de los principales ejemplos de este tipo de virtualización son:
+- **Máquina virtual de Java (JVM):** ejecuta los bytecodes de Java en cualquier sistema y
+arquitectura que la tenga implementada.
+- **Wine:** ejecutar aplicaciones Windows en otros sistemas operativos.  
 
 ### 2.4 ¿Qué es un hipervisor?  
-Emula hardware para virtualizar sistemas operativos. Ejemplos:  
-- VirtualBox  
-- VMWare  
-
-Más información: [Wikipedia - Hipervisor](https://es.wikipedia.org/wiki/Hipervisor)  
+Un hipervisor, es una máquina virtual que simula total o parcialmente un hardware de una
+máquina, permitiendo la instalación de distintos sistemas operativos (por ejemplo, virtualizar un
+sistema Windows 10 Home en una máquina real Linux).
+Algunos softwares conocidos que implementan un hipervisor son: Virtualbox, VMWare,
+emuladores de consolas, etc.
+Para saber más: [Wikipedia - Hipervisor](https://es.wikipedia.org/wiki/Hipervisor)  
 
 ---
 
