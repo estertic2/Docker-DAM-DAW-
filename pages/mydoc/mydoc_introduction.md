@@ -59,9 +59,9 @@ una máquina virtual utilizando técnicas de virtualización es la solución a e
 De este modo, una máquina virtual permite simular una máquina (con su sistema operativo) y
 ejecutar programas como si estuvieran utilizando una máquina real e independiente.
 Para la creación de máquinas virtuales generalmente existen varios tipos de tecnologías:
-● Máquina virtuales de proceso.
-● Hipervisores.
-● Contenedores. Docker se engloba en esta categoría.  
+- Máquina virtuales de proceso.
+- Hipervisores.
+- Contenedores. Docker se engloba en esta categoría.  
 
 ### 2.3 ¿Qué es una máquina virtual de proceso?  
 Las máquinas virtuales de proceso, son un tipo de máquinas virtuales que permiten ejecutar un
@@ -88,8 +88,22 @@ Para saber más: [Wikipedia - Hipervisor](https://es.wikipedia.org/wiki/Hipervis
 ## 3. Contenedores  
 
 ### 3.1 ¿Qué son los contenedores?  
-Virtualizan a nivel de sistema operativo en lugar de hardware.  
-Más información: [OS-level virtualization](https://en.wikipedia.org/wiki/OS-level_virtualization)  
+Los contenedores son una tecnología de virtualización, que al contrario que un hipervisor (que  
+trata de emular un sistema completo), utiliza el sistema base de la máquina anfitrión y actúa  
+realmente como un “entorno privado” que comparte recursos con el sistema anfitrión, sin  
+virtualizar el hardware completo. En concreto, los contenedores suelen tener entornos privados  
+aislados a nivel de procesos, memoria, sistema de ficheros y red.  
+
+Técnicamente, los contenedores son un tipo de virtualización englobada en lo que se llama “OS  
+Level virtualization”.  
+
+Para saber más: [OS-level virtualization](https://en.wikipedia.org/wiki/OS-level_virtualization)
+
+<div style="border: 1px solid #f5c6cb; background-color: #f8d7da; padding: 10px; border-radius: 5px; color: #721c24;">
+<strong>❕ Atención:</strong> Esto implica que, de forma nativa, no puedes ejecutar un contenedor en un sistema
+operativo distinto del que utiliza la tecnología de contenedores.
+</div>
+
 
 ### 3.2 Analogía con contenedores de transporte marítimo  
 Cumplen estándares que los hacen transportables independientemente del contenido.  
